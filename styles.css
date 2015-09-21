@@ -1,0 +1,321 @@
+body, html{
+    margin:0;
+    font-family: sfThin;
+    text-rendering: optimizeLegibility;
+
+
+}
+a.navItems:Hover {
+    border-color: rgb(255, 98, 5);
+}
+
+h2 {
+    display: block;
+    font-family: sfThin;
+    font-size: 90px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: normal;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+  }
+
+#nav{
+  display:flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position:fixed;
+  flex-wrap: wrap;
+  opacity: .85;
+  width: 100%;
+  background-color: black;
+
+  box-shadow: 0px 1px 8px #2d2d2d;
+}
+
+.navItems{
+  transition: border 200ms ease;
+  text-decoration: none;
+  border-radius: 0px;
+  margin:12px;
+  font-family: sfThin;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 17px;
+  padding-right: 17px;
+  font-size: 22px;
+  align-items: center;
+  font-weight: normal;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+  border-bottom: solid black 1px;
+
+}
+
+
+#panel-one{
+  background-image: url(panelone1.jpg);
+  background-size:cover;
+  background-position: bottom;
+  height: 60vh;
+}
+#panel-two{
+  display:flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+
+}
+.panel-two-one{
+  flex-grow: 1;
+  display: flex;
+  border-left:1px solid rgb(212, 212, 212);
+  border-right:1px solid rgb(212, 212, 212);
+
+  display: -webkit-flex;
+  flex-shrink: 0;
+  flex-direction: row;
+
+
+}
+input[type="text"] {
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+    height: 25px;
+    margin-left: 10px;
+    font-family: sf;
+    font-size: 23px;
+    margin-right: 10px;
+
+}
+
+input[type="number"] {
+    width:50px;
+    height: 25px;
+    margin-left: 5px;
+    font-family: sf;
+    font-size: 23px;
+
+
+    margin-right: 10px;
+}
+
+
+.permInfo{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: nowrap;
+  text-rendering: optimizeLegibility;
+  font-size: 18px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.comboInfo{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: nowrap;
+  text-rendering: optimizeLegibility;
+  font-size: 18px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+
+}
+.comboTry{
+  flex-grow: 1;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+}
+
+.permTry{
+  flex-grow: 1;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+}
+.comboTryInputs{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow:1;
+  font-size: 24px;
+  flex-flow: column;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.permTryInputs{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow:1;
+  font-size: 24px;
+  flex-flow: column;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.top{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.comboOut{
+  flex-grow: 1;
+  flex-flow: row;
+  display:flex;
+  justify-content: center;
+  margin-top: 10px;
+  /*
+  box-shadow: 0px 1px 4px #2d2d2d;
+  overflow-y: scroll;
+  */
+}
+.permOut{
+  flex-grow: 1;
+  flex-flow: row;
+  display:flex;
+  justify-content: center;
+  margin-top: 10px;
+  /*
+  box-shadow: 0px 1px 4px #2d2d2d;
+  overflow-y: scroll;
+  */
+}
+
+div.comboOut *{
+  display: flex;
+  padding-top:5px;
+  margin-left: 3px;
+  margin-right:3px;
+  flex-grow: 1;
+  justify-content: center;
+
+  border-radius: 3px;
+  max-height: 430px;
+  min-height: 300px;
+  overflow-y: scroll;
+  box-shadow: 0px 1px 4px #2d2d2d;
+
+}
+
+div.permOut *{
+  display: flex;
+  padding-top:5px;
+  margin-left: 3px;
+  margin-right:3px;
+  flex-grow: 1;
+  justify-content: center;
+
+  border-radius: 3px;
+  max-height: 430px;
+  min-height: 300px;
+  overflow-y: scroll;
+  box-shadow: 0px 1px 4px #2d2d2d;
+
+}
+
+.backButton {
+ background-image: url(b.png);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ height: 489px;
+ width: 65px;
+
+}
+.backButton:hover {
+  background-image: url(bO.png);
+}
+
+
+.permButtons{
+  cursor: pointer;
+  transition: border 200ms ease;
+  text-decoration: none;
+  border-radius: 3px;
+  margin:10px;
+  font-family: sfThin;
+  padding-top: 7px;
+  padding-bottom: 12px;
+  padding-left: 17px;
+  padding-right: 17px;
+  font-size: 32px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: solid black 2px;
+}
+
+.permButtons:Hover{
+    border-color: rgb(255, 98, 5);
+}
+
+.runButtons{
+  cursor: pointer;
+  transition: border 200ms ease;
+  text-decoration: none;
+  border-radius: 3px;
+  font-family: sfThin;
+  flex-shrink: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 22px;
+  padding-bottom: 3px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  height:25px;
+
+  border: solid black 2px;
+}
+
+.runButtons:Hover{
+    border-color: rgb(255, 98, 5);
+}
+
+
+
+#panel-three{
+  padding-top:20px;
+  padding-bottom: 20px;
+  background-color:rgba(0, 0, 0, 0.03);
+}
+
+@font-face {
+    font-family: sf;
+    src: url(sfUltraThin.ttf);
+}
+
+@font-face {
+  font-family: sfThin;
+  src: url(sfThin.ttf);
+}
+
+@font-face {
+  font-family: sfRegular;
+  src: url(sfRegular.ttf);
+}
