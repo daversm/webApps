@@ -2,8 +2,8 @@
  * Require Imports *
  * *****************/
 
-var express = require(‘express‘);
-var path = require(‘path‘);
+var express = require('express');
+var path = require('path');
 
 /* ***********************
  * Initialize Middleware *
@@ -13,15 +13,15 @@ var path = require(‘path‘);
 var app = express();
 
 // Use the static assets from the same directory as this server.js file
-app.use(express.static(path.resolve(“./“)));
+app.use(express.static(path.resolve("./")));
 
 /* **************
  * GET Requests *
  * **************/
 
 // index.html
-app.get(‘/‘, function(req, res) {
-  res.sendFile(‘index.html‘);
+app.get('/', function(req, res) {
+  res.sendFile('index.html');
 });
 
 /* ******************
@@ -31,5 +31,5 @@ app.get(‘/‘, function(req, res) {
 var port = process.env.PORT || 8080;
 
 var server = app.listen(port, function() {
-  console.log(‘Listening on port:‘, port);
+  console.log('Listening on port:', port);
 });
