@@ -2,6 +2,7 @@ $('.comboTry').hide();
 $('.permTry').hide();
 
 
+
 $('.permInfo .permButtons, .permTry .backButton').on('click',
     function(){
       $('.permOut').empty();
@@ -14,5 +15,25 @@ $('.comboInfo .permButtons, .comboTry .backButton').on('click',
 
       $('.comboOut').empty();
       $('.comboInfo, .comboTry').toggle()
+    }
+);
+
+$('#me').on('click',
+    function(){
+
+      $('body').scrollTo('max', {duration:500});
+    }
+);
+$('#photography').on('click',
+    function(){
+
+      $('body').scrollTo('0%', {duration:500});
+    }
+);
+
+$('#apps').on('click',
+    function(){
+
+      $('body').scrollTo($('#webAppsDiv').offset().top-65, {duration:500});
     }
 );
