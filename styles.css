@@ -84,6 +84,7 @@ h6 {
 
 .containerMy {
     display:flex;
+    padding-top: 100px;
     flex-direction: column;
     flex-wrap:wrap;
     line-height: normal;
@@ -115,7 +116,7 @@ h6 {
   align-items: center;
   position:fixed;
   flex-wrap: wrap;
-  opacity: .85;
+  opacity: .80;
   width: 100%;
   background-color: black;
   z-index: 100;
@@ -153,6 +154,7 @@ h6 {
   background-position: bottom;
   height: 60vh;
   */
+  padding-top: 66px;
   background-color: gray;
 
 }
