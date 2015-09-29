@@ -11,10 +11,7 @@ body, html{
     transition: border 200ms ease;
     text-decoration: none;
     border-radius: 0px;
-    margin-top:12px;
-    margin-bottom:12px;
-    margin-left: 20px;
-    margin-right: 20px;
+
     font-family: sfThin;
 
     font-size: 21px;
@@ -131,8 +128,8 @@ h6 {
   transition: border 200ms ease;
   text-decoration: none;
   border-radius: 0px;
-  margin-top:12px;
-  margin-bottom:12px;
+  margin-top:9px;
+  margin-bottom:9px;
   margin-left: 20px;
   margin-right: 20px;
   font-family: sfThin;
@@ -157,7 +154,7 @@ h6 {
   background-position: bottom;
   height: 60vh;
   */
-  padding-top: 58px;
+  padding-top: 52px;
  background-color: black;
 
 }
