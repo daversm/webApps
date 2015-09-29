@@ -34,6 +34,6 @@ $('#photography').on('click',
 $('#apps').on('click',
     function(){
 
-      $('body').scrollTo($('#webAppsDiv').offset().top-65, {duration:500});
+      $('body').scrollTo($('#webAppsDiv').offset().top-58, {duration:500});
     }
 );

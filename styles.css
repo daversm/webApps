@@ -11,13 +11,13 @@ body, html{
     transition: border 200ms ease;
     text-decoration: none;
     border-radius: 0px;
-    margin:12px;
+    margin-top:12px;
+    margin-bottom:12px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-family: sfThin;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    padding-left: 17px;
-    padding-right: 17px;
-    font-size: 22px;
+
+    font-size: 21px;
     align-items: center;
     font-weight: normal;
     justify-content: center;
@@ -50,7 +50,7 @@ h2 {
 h3 {
     display: block;
     font-family: sfRegular;
-    font-size: 80px;
+    font-size: 60px;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
@@ -62,7 +62,7 @@ h5 {
     display: block;
     font-family: sfThin;
     color:white;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
@@ -73,13 +73,14 @@ h5 {
 h6 {
     display: block;
     font-family: sfThin;
-    opacity: .9;
-    font-size: 70px;
+
+    font-size: 50px;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     font-weight: normal;
+
 }
 
 .containerMy {
@@ -130,13 +131,15 @@ h6 {
   transition: border 200ms ease;
   text-decoration: none;
   border-radius: 0px;
-  margin:12px;
+  margin-top:12px;
+  margin-bottom:12px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-family: sfThin;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  padding-left: 17px;
-  padding-right: 17px;
-  font-size: 22px;
+  padding-top: 2px;
+  padding-bottom: 7px;
+
+  font-size: 21px;
   align-items: center;
   font-weight: normal;
   justify-content: center;
@@ -154,8 +157,8 @@ h6 {
   background-position: bottom;
   height: 60vh;
   */
-  padding-top: 66px;
-  background-color: gray;
+  padding-top: 58px;
+ background-color: black;
 
 }
 #panel-two{
@@ -185,8 +188,12 @@ flex-grow: 1;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-  background-color:rgba(223, 223, 223, 0.89);
+  /*background-color:rgba(223, 223, 223, 0.89);*/
+  border-bottom: solid gray 2px;
   padding: 30px;
+  margin-bottom: 3px;
+  margin-left: 200px;
+  margin-right: 200px;
 
 }
 input[type="text"], input[type="search"], [type="password"]{
@@ -435,7 +442,7 @@ footer, push {
 
 display: flex;
 flex-direction: column;
-padding-top: 60px;
+padding-top: 120px;
 align-items: center;
 justify-content: center;
 
@@ -477,8 +484,8 @@ background-color: rgba(192, 73, 4,  0.81);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 10px;
-    width: 10px;
+    height: 17px;
+    width: 17px;
     border: none;
     transition: background-image 200ms ease;
 }
@@ -493,10 +500,10 @@ background-color: rgba(192, 73, 4,  0.81);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 9px;
-    width: 9px;
+    height: 16px;
+    width: 16px;
     border: none;
-    transition:
+
     transition: background-image 200ms ease;
 }
 
