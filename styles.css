@@ -455,10 +455,10 @@ footer, push {
 
 display: flex;
 flex-direction: column;
-padding-top: 70px;
+padding-top: 30px;
 align-items: center;
 justify-content: center;
-padding-bottom: 70px;
+padding-bottom: 30px;
 background-color: rgba(192, 73, 4,  0.81);
 }
 
