@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles.css">
-
     <title> Daver Muzaffar </title>
 
 
@@ -50,6 +49,7 @@
           <div class="carousel-inner" role="listbox">
             <div class="item active">
               <img src="Photos/13.jpg" width="100%" height="auto">
+
               <div class="carousel-caption">
               <h3>Scripps Pier</h3>
               <h5> San Diego - Daver Muzaffar  </h5>
@@ -57,7 +57,7 @@
             </div>
 
             <div class="item">
-              <img src="Photos/1.jpg"  width="100%" height="auto">
+              <img data-lazy-load-src="Photos/1.jpg"  width="100%" height="auto" class="img-responsive">
               <div class="carousel-caption">
                  <h3>Glider Port</h3>
                  <h5> San Diego - Daver Muzaffar </h5>
@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="item">
-              <img src="Photos/2.jpg"  width="100%" height="auto">
+              <img data-lazy-load-src="Photos/2.jpg"  width="100%" height="auto" class="img-responsive">
               <div class="carousel-caption">
               <h3>Scripps Pier</h3>
               <h5> San Diego - Daver Muzaffar  </h5>
@@ -74,7 +74,7 @@
             </div>
 
             <div class="item">
-              <img src="Photos/3.jpg" width="100%" height="auto">
+              <img data-lazy-load-src="Photos/3.jpg" width="100%" height="auto" class="img-responsive">
               <div class="carousel-caption">
               <h3>Scripps Pier</h3>
               <h5> San Diego - Daver Muzaffar  </h5>
@@ -83,14 +83,14 @@
 
 
             <div class="item">
-              <img src="Photos/6.jpg" width="100%" height="auto">
+              <img data-lazy-load-src="Photos/6.jpg" width="100%" height="auto" class="img-responsive">
               <div class="carousel-caption">
               <h3>Scripps Pier</h3>
               <h5> San Diego - Daver Muzaffar  </h5>
             </div>
             </div>
             <div class="item">
-              <img src="Photos/7.jpg" width="100%" height="auto">
+              <img data-lazy-load-src="Photos/7.jpg" width="100%" height="auto" class="img-responsive">
               <div class="carousel-caption">
               <h3>Salk Institute</h3>
               <h5> San Diego - Daver Muzaffar  </h5>
@@ -98,28 +98,28 @@
             </div>
 
             <div class="item">
-              <img src="Photos/9.jpg" width="100%" height="auto">
+              <img data-lazy-load-src="Photos/9.jpg" width="100%" height="auto" class="img-responsive">
               <div class="carousel-caption">
                 <h3>Salk Institute</h3>
                 <h5> San Diego - Daver Muzaffar  </h5>
             </div>
             </div>
             <div class="item">
-              <img src="Photos/10.jpg" width="100%" height="auto">
+              <img data-lazy-load-src="Photos/10.jpg" width="100%" height="auto" class="img-responsive">
               <div class="carousel-caption">
               <h3>Transamerica Pyramid</h3>
               <h5> San Francisco - Daver Muzaffar </h5>
             </div>
             </div>
             <div class="item">
-              <img src="Photos/11.jpg" width="100%" height="auto">
+              <img data-lazy-load-src="Photos/11.jpg" width="100%" height="auto" class="img-responsive">
               <div class="carousel-caption">
               <h3>Scripps Pier</h3>
               <h5> San Diego - Daver Muzaffar </h5>
             </div>
             </div>
             <div class="item">
-              <img src="Photos/12.jpg" width="100%" height="auto">
+              <img data-lazy-load-src="Photos/12.jpg" width="100%" height="auto" class="img-responsive">
               <div class="carousel-caption">
               <h3>Scripps Pier</h3>
               <h5> San Diego - Daver Muzaffar  </h5>
@@ -127,7 +127,7 @@
             </div>
 
             <div class="item">
-              <img src="Photos/14.jpg" width="100%" height="auto">
+              <img data-lazy-load-src="Photos/14.jpg" width="100%" height="auto">
               <div class="carousel-caption">
               <h3>Scripps Pier</h3>
               <h5> San Diego - Daver Muzaffar  </h5>
@@ -338,6 +338,39 @@
       </div>
 
     </div>
+    <script>
+        var cHeight = 0;
+
+        $('#myCarousel').on('slide.bs.carousel', function (e) {
+            var $nextImage = null;
+
+            $activeItem = $('.active.item', this);
+
+            if (e.direction == 'left'){
+                $nextImage = $activeItem.next('.item').find('img');
+            } else {
+          if ($activeItem.index() == 0){
+                    $nextImage = $('img:last', $activeItem.parent());
+                } else {
+                    $nextImage = $activeItem.prev('.item').find('img');
+                }
+          }
+
+            // prevents the slide decrease in height
+            if (cHeight == 0) {
+               cHeight = $(this).height();
+               $activeItem.next('.item').height(cHeight);
+            }
+
+            // prevents the loaded image if it is already loaded
+            var src = $nextImage.data('lazy-load-src');
+
+            if (typeof src !== "undefined" && src != "") {
+               $nextImage.attr('src', src)
+               $nextImage.data('lazy-load-src', '');
+            }
+        });
+    </script>
     <footer>
 
         <div class = "githubIcone">

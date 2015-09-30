@@ -2,6 +2,7 @@ body, html{
     margin:0;
     font-family: sfThin;
     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 
 
 
@@ -123,6 +124,7 @@ h6 {
 }
 
 #nav *{
+  -webkit-font-smoothing: antialiased;
   opacity: 1;
   cursor: pointer;
   transition: border 200ms ease;
