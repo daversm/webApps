@@ -113,6 +113,9 @@ h6 {
   }
 
 
+  .lazy-load {
+      background: url("http://www.mozart.it/images/preloader.gif") center center no-repeat;
+  }
 
 
 #nav{
@@ -445,7 +448,7 @@ div.permOut *{
   padding-bottom: 30px;
   align-items: center;
   justify-content: center;
-  background-color:rgba(223, 223, 223, 0.89);
+  background-color:rgb(231, 231, 231);
 }
 footer, push {
 
