@@ -21,7 +21,7 @@ $('.comboInfo .permButtons, .comboTry .backButton').on('click',
 $('#me').on('click',
     function(){
 
-      $('body').scrollTo('footer', {duration:500});
+      $('body').scrollTo($('footer').offset().top-52, {duration:500});
     }
 );
 $('#photography').on('click',
