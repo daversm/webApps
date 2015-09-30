@@ -7,6 +7,14 @@ body, html{
 
 
 }
+hr{
+  border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: rgb(186,186, 186); /* old IE */
+    background-color: rgb(186, 186, 186); /* Modern Browsers */
+    width: 70%;
+}
 #nav *:Hover {
     border-color: rgb(255, 98, 5);
     transition: border 200ms ease;
@@ -26,7 +34,7 @@ body, html{
 h1 {
     display: block;
     font-family: sf;
-    font-size: 45px;
+    font-size: 30px;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
@@ -165,7 +173,7 @@ h6 {
   display: -webkit-flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 30px;
   align-items: center;
   justify-content: center;
@@ -178,8 +186,8 @@ h6 {
   min-width: 100px;
   flex-direction: row;
   align-content: center;
-justify-content: center;
-flex-grow: 1;
+  justify-content: center;
+  flex-grow: 1;
 }
 #webAppsDiv{
   line-height: normal;
@@ -188,11 +196,8 @@ flex-grow: 1;
   justify-content: center;
   align-items: center;
   /*background-color:rgba(223, 223, 223, 0.89);*/
-  border-bottom: solid gray 2px;
-  padding: 30px;
-  margin-bottom: 3px;
-  margin-left: 200px;
-  margin-right: 200px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 
 }
 input[type="text"], input[type="search"], [type="password"]{
@@ -236,7 +241,8 @@ input[type="number"] {
   padding-left: 40px;
   padding-right: 40px;
   flex-direction: column;
-  align-items: center;
+  max-width: 420px;
+
 
 }
 
@@ -382,12 +388,16 @@ div.permOut *{
   text-decoration: none;
   border-radius: 3px;
   margin:10px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: sfThin;
   padding-top: 7px;
   padding-bottom: 12px;
   padding-left: 17px;
   padding-right: 17px;
   font-size: 32px;
+  width: 90px;
+  display: flex;
   align-items: center;
   justify-content: center;
   color: black;
