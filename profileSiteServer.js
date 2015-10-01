@@ -23,17 +23,17 @@ app.get('/', function(req, res){
 
   app.use(express.static(__dirname));
 
-  if (browserName == 'IE' && browserVersion <= 9)
+  if (browserName == 'IE' && browserVersion <= 10)
     res.sendFile('nosupport.html', { root:__dirname});
-  else if (browserName == 'Firefox' && browserVersion <= 24)
+  else if (browserName == 'Firefox' && browserVersion <= 27)
     res.sendFile('nosupport.html', { root:__dirname});
-  else if (browserName == 'Chrome' && browserVersion <= 29)
+  else if (browserName == 'Chrome' && browserVersion <= 21)
     res.sendFile('nosupport.html', { root:__dirname});
   else if (browserName == 'Canary' && browserVersion <= 32)
     res.sendFile('nosupport.html', { root:__dirname});
-  else if (browserName == 'Safari' && browserVersion <= 5)
+  else if (browserName == 'Safari' && browserVersion <= 6)
     res.sendFile('nosupport.html', { root:__dirname});
-  else if (browserName == 'Opera' && browserVersion <= 16)
+  else if (browserName == 'Opera' && browserVersion <= 17)
     res.sendFile('nosupport.html', { root:__dirname});
   else
    res.sendFile('index.html', { root:__dirname});
