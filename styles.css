@@ -260,12 +260,11 @@ input[type="number"] {
 
 }
 .info_example{
-  display: flex;
-  display: -webkit-flex;
-  flex-grow: 1;
+
+
   padding-left: 20px;
   padding-right: 20px;
-  flex-direction: column;
+
 
   max-width: 420px;
 
