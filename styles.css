@@ -45,7 +45,7 @@ h1 {
 h2 {
     display: block;
     font-family: sfThin;
-    font-size: 50px;
+    font-size: 35px;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
@@ -80,7 +80,7 @@ h6 {
     display: block;
     font-family: sfThin;
 
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
@@ -91,9 +91,12 @@ h6 {
 
 .containerMy {
     display:flex;
+    display: -ms-flexbox;
     padding-top: 100px;
     flex-direction: column;
+    -ms-flex-direction: column;
     flex-wrap:wrap;
+    -ms-flex-wrap: wrap;
     line-height: normal;
     z-index: -300;
   }
@@ -120,12 +123,15 @@ h6 {
 
 #nav{
   display:flex;
+  display: -ms-flexbox;
   display: -webkit-flex;
   flex-direction: row;
+  -ms-flex-direction: row;
   justify-content: center;
   align-items: center;
   position:fixed;
   flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   opacity: .80;
   width: 100%;
   background-color: black;
@@ -146,8 +152,8 @@ h6 {
   margin-left: 20px;
   margin-right: 20px;
   font-family: sfThin;
-  padding-top: 2px;
-  padding-bottom: 7px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 
   font-size: 21px;
   align-items: center;
@@ -167,15 +173,18 @@ h6 {
   background-position: bottom;
   height: 60vh;
   */
-  padding-top: 52px;
+  padding-top: 51px;
  background-color: black;
 
 }
 #panel-two{
   display:flex;
+  display: -ms-flexbox;
   display: -webkit-flex;
   flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-direction: row;
+  -ms-flex-direction: row;
   padding-top: 20px;
   padding-bottom: 30px;
   align-items: center;
@@ -188,6 +197,7 @@ h6 {
   display: -webkit-flex;
   min-width: 100px;
   flex-direction: row;
+  -ms-flex-direction: row;
   align-content: center;
   justify-content: center;
   flex-grow: 1;
@@ -209,22 +219,22 @@ input[type="text"], input[type="search"], [type="password"]{
     box-sizing: content-box;
     min-width: 300px;
     max-width: 500px;
-    height: 25px;
+    height: 26px;
     margin-left: 10px;
     margin-top: 0;
     padding:0;
     font-family: sf;
-    font-size: 23px;
+    font-size: 22px;
     margin-right: 10px;
 }
 
 input[type="number"] {
     width:50px;
     box-sizing: content-box;
-    height: 25px;
+    height: 26px;
     margin-left: 5px;
     font-family: sf;
-    font-size: 23px;
+    font-size: 22px;
     margin-right: 10px;
 }
 
@@ -234,9 +244,11 @@ input[type="number"] {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   text-rendering: optimizeLegibility;
   font-size: 18px;
   flex-direction: row;
+  -ms-flex-direction: row;
 
 }
 .info_example{
@@ -245,6 +257,7 @@ input[type="number"] {
   padding-left: 20px;
   padding-right: 20px;
   flex-direction: column;
+  -ms-flex-direction: column;
   max-width: 420px;
 
 
@@ -255,6 +268,7 @@ input[type="number"] {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  -ms-flex-direction: row;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -266,14 +280,18 @@ input[type="number"] {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   text-rendering: optimizeLegibility;
   font-size: 18px;
   flex-direction: row;
+  -ms-flex-direction: row;
 
 }
 .comboTry{
   display:flex;
+  display: -ms-flexbox;
   flex-direction: row;
+  -ms-flex-direction: row;
   justify-content: center;
   width: 100%;
   margin-left: 10px;
@@ -284,7 +302,9 @@ input[type="number"] {
 
 .permTry{
   display:flex;
+  display: -ms-flexbox;
   flex-direction: row;
+  -ms-flex-direction: row;
   justify-content: center;
   width: 100%;
   margin-left: 10px;
@@ -294,6 +314,7 @@ input[type="number"] {
 .comboTryInputs{
   display: flex;
   flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-grow:1;
   font-size: 24px;
   flex-flow: column;
@@ -303,6 +324,7 @@ input[type="number"] {
 .permTryInputs{
   display: flex;
   flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-grow:1;
   font-size: 24px;
   flex-flow: column;
@@ -313,6 +335,7 @@ input[type="number"] {
 .top{
   display: flex;
   flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-flow: row;
   justify-content: center;
 }
@@ -321,6 +344,7 @@ input[type="number"] {
   flex-grow: 1;
   flex-flow: row;
   display:flex;
+  display: -ms-flexbox;
   justify-content: center;
   margin-top: 10px;
   /*
@@ -332,6 +356,7 @@ input[type="number"] {
   flex-grow: 1;
   flex-flow: row;
   display:flex;
+  display: -ms-flexbox;
   justify-content: center;
   margin-top: 10px;
   /*
@@ -396,7 +421,7 @@ div.permOut *{
   margin-right: auto;
   font-family: sfThin;
   padding-top: 7px;
-  padding-bottom: 12px;
+  padding-bottom: 7px;
   padding-left: 17px;
   padding-right: 17px;
   font-size: 32px;
@@ -423,7 +448,7 @@ div.permOut *{
   flex-shrink: 0;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 22px;
+  font-size: 20px;
   padding-bottom: 3px;
   align-items: center;
   justify-content: center;
@@ -442,9 +467,12 @@ div.permOut *{
 
 #panel-three{
   display:flex;
+  display: -ms-flexbox;
   display: -webkit-flex;
   flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-direction: row;
+  -ms-flex-direction: row;
   padding-top: 30px;
   padding-bottom: 30px;
   align-items: center;
@@ -455,6 +483,7 @@ footer, push {
 
 display: flex;
 flex-direction: column;
+-ms-flex-direction: column;
 padding-top: 30px;
 align-items: center;
 justify-content: center;
@@ -465,6 +494,7 @@ background-color: rgba(192, 73, 4,  0.81);
 .linkedInIcone{
   display: flex;
   flex-direction: column;
+  -ms-flex-direction: column;
   font-family: sfThin;
   font-size: 18px;
   color: white;
@@ -475,6 +505,7 @@ background-color: rgba(192, 73, 4,  0.81);
 .githubIcone{
   display: flex;
   flex-direction: column;
+  -ms-flex-direction: column;
   font-family: sfThin;
   font-size: 18px;
   color: white;
@@ -485,6 +516,7 @@ background-color: rgba(192, 73, 4,  0.81);
 .contactLogo{
   display: flex;
   flex-direction: column;
+  -ms-flex-direction: column;
   font-family: sfThin;
   font-size: 18px;
   color: white;
@@ -526,7 +558,7 @@ background-color: rgba(192, 73, 4,  0.81);
     transition: background-image 200ms ease;
 
 }
-
+/*
 @font-face {
     font-family: sf;
     src: url(fonts/sfUltraThin.ttf);
@@ -540,4 +572,65 @@ background-color: rgba(192, 73, 4,  0.81);
 @font-face {
   font-family: sfRegular;
   src: url(fonts/sfRegular.ttf);
+}
+*/
+@font-face {
+    font-family: 'sf';
+    src: url('sf/sfultrathin-webfont.eot');
+    src: url('sf/sfultrathin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sf/sfultrathin-webfont.woff2') format('woff2'),
+         url('sf/sfultrathin-webfont.woff') format('woff'),
+         url('sf/sfultrathin-webfont.ttf') format('truetype'),
+         url('sf/sfultrathin-webfont.svg#sfns_displayultralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'sfThin';
+    src: url('sf/sfthin-webfont.eot');
+    src: url('sf/sfthin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sf/sfthin-webfont.woff2') format('woff2'),
+         url('sf/sfthin-webfont.woff') format('woff'),
+         url('sf/sfthin-webfont.ttf') format('truetype'),
+         url('sf/sfthin-webfont.svg#sfns_displaythin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'sfns_displaybold';
+    src: url('sf/sfregular-webfont.eot');
+    src: url('sf/sfregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sf/sfregular-webfont.woff2') format('woff2'),
+         url('sf/sfregular-webfont.woff') format('woff'),
+         url('sf/sfregular-webfont.ttf') format('truetype'),
+         url('sf/sfregular-webfont.svg#sfns_displaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'sfRegular';
+    src: url('sf/sfbold-webfont.eot');
+    src: url('sf/sfbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sf/sfbold-webfont.woff2') format('woff2'),
+         url('sf/sfbold-webfont.woff') format('woff'),
+         url('sf/sfbold-webfont.ttf') format('truetype'),
+         url('sf/sfbold-webfont.svg#sfns_displayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
