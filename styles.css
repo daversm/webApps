@@ -92,6 +92,7 @@ h6 {
 .containerMy {
     display:flex;
     display: -ms-flexbox;
+    display: -webkit-flex;
     padding-top: 100px;
     flex-direction: column;
     -ms-flex-direction: column;
@@ -130,6 +131,8 @@ h6 {
   justify-content: center;
   -ms-flex-pack: center;
   align-items: center;
+  -webkit-align-items: center;
+
   position:fixed;
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
@@ -158,6 +161,7 @@ h6 {
 
   font-size: 21px;
   align-items: center;
+  -webkit-align-items: center;
   font-weight: normal;
   justify-content: center;
   color: white;
@@ -189,6 +193,7 @@ h6 {
   padding-top: 20px;
   padding-bottom: 30px;
   align-items: center;
+  -webkit-align-items: center;
   justify-content: center;
 
 
@@ -200,16 +205,19 @@ h6 {
   flex-direction: row;
   -ms-flex-direction: row;
   align-content: center;
+  -webkit-align-items: center;
   justify-content: center;
   flex-grow: 1;
 }
 #webAppsDiv{
   line-height: normal;
   display: flex;
+  display: -webkit-flex;
   flex-grow: 1;
 
   justify-content: center;
   align-items: center;
+  -webkit-align-items: center;
   /*background-color:rgba(223, 223, 223, 0.89);*/
   padding-top: 30px;
   padding-bottom: 20px;
@@ -254,6 +262,7 @@ input[type="number"] {
 }
 .info_example{
   display: flex;
+  display: -webkit-flex;
   flex-grow: 1;
   padding-left: 20px;
   padding-right: 20px;
@@ -266,8 +275,10 @@ input[type="number"] {
 
 .cards {
   display: flex;
+  display: -webkit-flex;
   justify-content: center;
   align-items: center;
+  -webkit-align-items: center;
   flex-direction: row;
   -ms-flex-direction: row;
   margin-top: 10px;
@@ -291,6 +302,7 @@ input[type="number"] {
 .comboTry{
   display:flex;
   display: -ms-flexbox;
+  display: -webkit-flex;
   flex-direction: row;
   -ms-flex-direction: row;
   justify-content: center;
@@ -304,6 +316,7 @@ input[type="number"] {
 .permTry{
   display:flex;
   display: -ms-flexbox;
+  display: -webkit-flex;
   flex-direction: row;
   -ms-flex-direction: row;
   justify-content: center;
@@ -314,6 +327,7 @@ input[type="number"] {
 }
 .comboTryInputs{
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-grow:1;
@@ -324,6 +338,7 @@ input[type="number"] {
 }
 .permTryInputs{
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-grow:1;
@@ -335,6 +350,7 @@ input[type="number"] {
 
 .top{
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-flow: row;
@@ -345,6 +361,7 @@ input[type="number"] {
   flex-grow: 1;
   flex-flow: row;
   display:flex;
+  display: -webkit-flex;
   display: -ms-flexbox;
   justify-content: center;
   margin-top: 10px;
@@ -358,6 +375,7 @@ input[type="number"] {
   flex-flow: row;
   display:flex;
   display: -ms-flexbox;
+  display: -webkit-flex;
   justify-content: center;
   margin-top: 10px;
   /*
@@ -368,6 +386,7 @@ input[type="number"] {
 
 div.comboOut *{
   display: flex;
+  display: -webkit-flex;
   padding-top:5px;
   margin-left: 3px;
   margin-right:3px;
@@ -384,6 +403,7 @@ div.comboOut *{
 
 div.permOut *{
   display: flex;
+  display: -webkit-flex;
   padding-top:5px;
   margin-left: 3px;
   margin-right:3px;
@@ -428,7 +448,9 @@ div.permOut *{
   font-size: 32px;
   width: 90px;
   display: flex;
+  display: -webkit-flex;
   align-items: center;
+  -webkit-align-items: center;
   justify-content: center;
   color: black;
   flex-shrink: 0;
@@ -452,6 +474,7 @@ div.permOut *{
   font-size: 20px;
   padding-bottom: 3px;
   align-items: center;
+  -webkit-align-items: center;
   justify-content: center;
   color: black;
   height:25px;
@@ -477,16 +500,19 @@ div.permOut *{
   padding-top: 30px;
   padding-bottom: 30px;
   align-items: center;
+  -webkit-align-items: center;
   justify-content: center;
   background-color:rgb(231, 231, 231);
 }
 footer, push {
 
 display: flex;
+display: -webkit-flex;
 flex-direction: column;
 -ms-flex-direction: column;
 padding-top: 30px;
 align-items: center;
+-webkit-align-items: center;
 justify-content: center;
 padding-bottom: 30px;
 background-color: rgba(192, 73, 4,  0.81);
@@ -494,34 +520,38 @@ background-color: rgba(192, 73, 4,  0.81);
 
 .linkedInIcone{
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   -ms-flex-direction: column;
   font-family: sfThin;
   font-size: 18px;
   color: white;
   align-items: center;
+  -webkit-align-items: center;
   justify-content: center;
 
 }
 .githubIcone{
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   -ms-flex-direction: column;
   font-family: sfThin;
   font-size: 18px;
   color: white;
-  align-items: center;
   justify-content: center;
 }
 
 .contactLogo{
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   -ms-flex-direction: column;
   font-family: sfThin;
   font-size: 18px;
   color: white;
   align-items: center;
+  -webkit-align-items: center;
   justify-content: center;
 }
 
