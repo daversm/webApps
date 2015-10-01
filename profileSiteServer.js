@@ -31,7 +31,7 @@ app.get('/', function(req, res){
     res.sendFile('nosupport.html', { root:__dirname});
   else if (browserName == 'Canary' && browserVersion <= 32)
     res.sendFile('nosupport.html', { root:__dirname});
-  else if (browserName == 'Safari' && browserVersion <= 9)
+  else if (browserName == 'Safari' && browserVersion <= 8)
     res.sendFile('nosupport.html', { root:__dirname});
   else if (browserName == 'Opera' && browserVersion <= 17)
     res.sendFile('nosupport.html', { root:__dirname});
