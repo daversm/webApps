@@ -34,7 +34,7 @@ hr{
 h1 {
     display: block;
     font-family: sf;
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
@@ -239,7 +239,7 @@ input[type="text"], input[type="search"], [type="password"]{
 input[type="number"] {
     width:50px;
     box-sizing: content-box;
-    height: 28px;
+    height: 27px;
     margin-left: 5px;
     font-family: sf;
     font-size: 22px;
