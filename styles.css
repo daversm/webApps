@@ -91,13 +91,13 @@ h6 {
 
 .containerMy {
     display:flex;
-    display: -ms-flexbox;
+
     display: -webkit-flex;
     padding-top: 100px;
     flex-direction: column;
-    -ms-flex-direction: column;
+
     flex-wrap:wrap;
-    -ms-flex-wrap: wrap;
+
     line-height: normal;
     z-index: -300;
   }
@@ -124,18 +124,18 @@ h6 {
 
 #nav{
   display:flex;
-  display: -ms-flexbox;
+
   display: -webkit-flex;
   flex-direction: row;
-  -ms-flex-direction: row;
+
   justify-content: center;
-  -ms-flex-pack: center;
+
   align-items: center;
   -webkit-align-items: center;
 
   position:fixed;
   flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
+
   opacity: .80;
   width: 100%;
   background-color: black;
@@ -184,12 +184,12 @@ h6 {
 }
 #panel-two{
   display:flex;
-  display: -ms-flexbox;
+
   display: -webkit-flex;
   flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
+
   flex-direction: row;
-  -ms-flex-direction: row;
+
   padding-top: 20px;
   padding-bottom: 30px;
   align-items: center;
@@ -203,7 +203,6 @@ h6 {
   display: -webkit-flex;
   min-width: 100px;
   flex-direction: row;
-  -ms-flex-direction: row;
   align-content: center;
   -webkit-align-items: center;
   justify-content: center;
@@ -253,11 +252,11 @@ input[type="number"] {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
+
   text-rendering: optimizeLegibility;
   font-size: 18px;
   flex-direction: row;
-  -ms-flex-direction: row;
+
 
 }
 .info_example{
@@ -267,7 +266,7 @@ input[type="number"] {
   padding-left: 20px;
   padding-right: 20px;
   flex-direction: column;
-  -ms-flex-direction: column;
+
   max-width: 420px;
 
 
@@ -280,7 +279,7 @@ input[type="number"] {
   align-items: center;
   -webkit-align-items: center;
   flex-direction: row;
-  -ms-flex-direction: row;
+
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -292,19 +291,19 @@ input[type="number"] {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
+
   text-rendering: optimizeLegibility;
   font-size: 18px;
   flex-direction: row;
-  -ms-flex-direction: row;
+
 
 }
 .comboTry{
   display:flex;
-  display: -ms-flexbox;
+
   display: -webkit-flex;
   flex-direction: row;
-  -ms-flex-direction: row;
+
   justify-content: center;
   width: 100%;
   margin-left: 10px;
@@ -315,10 +314,10 @@ input[type="number"] {
 
 .permTry{
   display:flex;
-  display: -ms-flexbox;
+
   display: -webkit-flex;
   flex-direction: row;
-  -ms-flex-direction: row;
+
   justify-content: center;
   width: 100%;
   margin-left: 10px;
@@ -329,7 +328,7 @@ input[type="number"] {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
+
   flex-grow:1;
   font-size: 24px;
   flex-flow: column;
@@ -340,7 +339,7 @@ input[type="number"] {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
+
   flex-grow:1;
   font-size: 24px;
   flex-flow: column;
@@ -352,7 +351,6 @@ input[type="number"] {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-flow: row;
   justify-content: center;
 }
@@ -362,7 +360,7 @@ input[type="number"] {
   flex-flow: row;
   display:flex;
   display: -webkit-flex;
-  display: -ms-flexbox;
+
   justify-content: center;
   margin-top: 10px;
   /*
@@ -374,7 +372,7 @@ input[type="number"] {
   flex-grow: 1;
   flex-flow: row;
   display:flex;
-  display: -ms-flexbox;
+
   display: -webkit-flex;
   justify-content: center;
   margin-top: 10px;
@@ -486,17 +484,14 @@ div.permOut *{
 }
 
 
-
-
-
 #panel-three{
   display:flex;
-  display: -ms-flexbox;
+
   display: -webkit-flex;
   flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
+
   flex-direction: row;
-  -ms-flex-direction: row;
+
   padding-top: 30px;
   padding-bottom: 30px;
   align-items: center;
@@ -509,7 +504,7 @@ footer, push {
 display: flex;
 display: -webkit-flex;
 flex-direction: column;
--ms-flex-direction: column;
+
 padding-top: 30px;
 align-items: center;
 -webkit-align-items: center;
@@ -520,39 +515,31 @@ background-color: rgba(192, 73, 4,  0.81);
 
 .linkedInIcone{
   display: flex;
-  display: -webkit-flex;
+
   flex-direction: column;
-  -ms-flex-direction: column;
+align-items: center;
   font-family: sfThin;
   font-size: 18px;
   color: white;
-  align-items: center;
-  -webkit-align-items: center;
-  justify-content: center;
 
 }
 .githubIcone{
   display: flex;
-  display: -webkit-flex;
   flex-direction: column;
-  -ms-flex-direction: column;
-  font-family: sfThin;
-  font-size: 18px;
-  color: white;
-  justify-content: center;
-}
-
-.contactLogo{
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: column;
-  -ms-flex-direction: column;
   font-family: sfThin;
   font-size: 18px;
   color: white;
   align-items: center;
-  -webkit-align-items: center;
-  justify-content: center;
+}
+
+.contactLogo{
+  display: flex;
+  flex-direction: column;
+  font-family: sfThin;
+  font-size: 18px;
+  align-items: center;
+  color: white;
+
 }
 
 #git{
