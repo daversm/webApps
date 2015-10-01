@@ -227,12 +227,12 @@ input[type="text"], input[type="search"], [type="password"]{
     box-sizing: content-box;
     min-width: 300px;
     max-width: 500px;
-    height: 26px;
+    height: 27px;
     margin-left: 10px;
     margin-top: 0;
     padding:0;
     font-family: sf;
-    font-size: 22px;
+    font-size: 21px;
     margin-right: 10px;
 }
 
