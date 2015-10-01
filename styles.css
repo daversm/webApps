@@ -227,7 +227,7 @@ input[type="text"], input[type="search"], [type="password"]{
     box-sizing: content-box;
     min-width: 300px;
     max-width: 500px;
-    height: 27px;
+    height: 30px;
     margin-left: 10px;
     margin-top: 0;
     padding:0;
@@ -239,7 +239,7 @@ input[type="text"], input[type="search"], [type="password"]{
 input[type="number"] {
     width:50px;
     box-sizing: content-box;
-    height: 26px;
+    height: 28px;
     margin-left: 5px;
     font-family: sf;
     font-size: 22px;
