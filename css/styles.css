@@ -3,16 +3,12 @@ body, html{
     font-family: sfThin;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-
-
-
 }
 hr{
-  border: none;
+    border: none;
     height: 2px;
-    /* Set the hr color */
-    color: rgb(186,186, 186); /* old IE */
-    background-color: rgb(186, 186, 186); /* Modern Browsers */
+    color: rgb(186,186, 186);
+    background-color: rgb(186, 186, 186);
     width: 70%;
 }
 #nav *:Hover {
@@ -20,9 +16,7 @@ hr{
     transition: border 200ms ease;
     text-decoration: none;
     border-radius: 0px;
-
     font-family: sfThin;
-
     font-size: 21px;
     align-items: center;
     font-weight: normal;
@@ -124,72 +118,55 @@ h6 {
 
 #nav{
   display:flex;
-
   display: -webkit-flex;
   flex-direction: row;
-
   justify-content: center;
-
   align-items: center;
   -webkit-align-items: center;
-
   position:fixed;
   flex-wrap: wrap;
-
-  opacity: .80;
   width: 100%;
   background-color: black;
   z-index: 100;
-
+  background:rgba(0,0,0,0.75);
   box-shadow: 0px 1px 8px #2d2d2d;
 }
 
 #nav *{
   -webkit-font-smoothing: antialiased;
-  opacity: 1;
   cursor: pointer;
   transition: border 200ms ease;
   text-decoration: none;
   border-radius: 0px;
-  margin-top:9px;
-  margin-bottom:9px;
+  margin-top:7px;
+  margin-bottom:7px;
   margin-left: 20px;
   margin-right: 20px;
   font-family: sfThin;
   padding-top: 1px;
   padding-bottom: 1px;
-
   font-size: 21px;
   align-items: center;
   -webkit-align-items: center;
-  font-weight: normal;
   justify-content: center;
   color: white;
   flex-shrink: 0;
-  border-bottom: solid black 1px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
 
 }
 
 
 #panel-one{
-  /*
-  background-image: url(panelone1.jpg);
-  background-size:cover;
-  background-position: bottom;
-  height: 60vh;
-  */
-  padding-top: 51px;
- background-color: black;
+  padding-top: 47px;
+  background-color: rgb(42, 42, 42);
 
 }
 #panel-two{
   display:flex;
-
   display: -webkit-flex;
   flex-wrap: wrap;
-
   flex-direction: row;
-
   padding-top: 20px;
   padding-bottom: 30px;
   align-items: center;
@@ -213,11 +190,9 @@ h6 {
   display: flex;
   display: -webkit-flex;
   flex-grow: 1;
-
   justify-content: center;
   align-items: center;
   -webkit-align-items: center;
-  /*background-color:rgba(223, 223, 223, 0.89);*/
   padding-top: 30px;
   padding-bottom: 20px;
 

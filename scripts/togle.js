@@ -21,7 +21,7 @@ $('.comboInfo .permButtons, .comboTry .backButton').on('click',
 $('#me').on('click',
     function(){
 
-      $('body').scrollTo($('footer').offset().top-51, {duration:450});
+      $('body').scrollTo($('footer').offset().top-47, {duration:450});
     }
 );
 $('#photography').on('click',
@@ -34,6 +34,6 @@ $('#photography').on('click',
 $('#apps').on('click',
     function(){
 
-      $('body').scrollTo($('#webAppsDiv').offset().top-51, {duration:450});
+      $('body').scrollTo($('#webAppsDiv').offset().top-47, {duration:450});
     }
 );
